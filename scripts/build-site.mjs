@@ -4,7 +4,7 @@ const output = new URL("dist/site/", root);
 await mkdir(output, {recursive: true});
 for (const page of ["support", "privacy", "terms", "account-deletion"]) {
  const original = await readFile(new URL(`site/${page}.html`, root), "utf8");
- const html = original.replace("<head>", `<head><base href="/"><link rel="canonical" href="https://pacepick.kolcu.ai/${page}/">`);
+ const html = original.replace(/(href|src)="(?!#|https?:|mailto:|\/)([^"\s]+)"/g, '$1="/$2"').replace("<head>", `<head><link rel="canonical" href="https://pacepick.kolcu.ai/${page}/">`);
  await writeFile(new URL(`${page}.html`, output), html);
  await mkdir(new URL(`${page}/`, output), {recursive: true});
  await writeFile(new URL(`${page}/index.html`, output), html);
