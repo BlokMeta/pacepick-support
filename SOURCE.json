@@ -1,0 +1,11 @@
+{
+  "sourceHashes": {
+    "site/support.html": "e5793742e75153260b70c6c6d1fb15ae4daa9f29f822169d60aa360feb2fc181",
+    "site/privacy.html": "2da54aa7393eec91801980a6e8adffc50d2f7b535b996a17da5791db1a234c9e",
+    "site/terms.html": "7067e2ccb9c1769f0d8f6240646f23f9091641ba7fb642ed506486d9c5f66a77",
+    "site/account-deletion.html": "b62d0b97e8d686abb010652f653d1baaddb50484dd804ea2dbd8ecfe28ae4cd0",
+    "site/style.css": "b6c3aec0d80250ee0d725458d5dd29ed1fc4ada2c82cc24a5ea62a6d2a1204c5",
+    "apps/mobile/assets/brand/symbol.png": "c05726a2d176ca91feafa4c11144b30e9efa36e532bd2f79a9b30d51acd86b07"
+  },
+  "sourceCommit": "1a9da5119075ecabbf9c58f689a5014f664045c5"
+}
